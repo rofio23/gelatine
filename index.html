@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#cba47b">
+  <title>Blue Slime — Relax</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="desk">
+
+    <header class="header">
+      <div class="brand">
+        <span class="brand-icon">💧</span>
+        <div>
+          <h1>BLUE SLIME</h1>
+          <p>Ton petit moment de détente</p>
+        </div>
+      </div>
+
+      <button id="soundBtn"
+              class="icon-btn"
+              aria-label="Activer le son">
+        🔇
+      </button>
+    </header>
+
+    <section class="play-area"
+             aria-label="Slime interactif">
+
+      <div class="slime-shadow"></div>
+
+      <canvas id="slimeCanvas"></canvas>
+
+      <div class="hint" id="hint">
+        ✨ Touche et étire le slime
+      </div>
+
+    </section>
+
+    <footer class="controls">
+      <div class="control-group">
+        <label for="elasticity">
+          Élasticité
+        </label>
+        <input type="range"
+               id="elasticity"
+               min="1"
+               max="10"
+               value="5">
+      </div>
+
+      <button id="resetBtn" class="reset-btn">
+        ↻ Réinitialiser
+      </button>
+    </footer>
+
+    <div class="bottom-text">
+      Prends ton temps. Détends-toi.
+    </div>
+
+  </main>
+
+  <script src="base.js"></script>
+  <script src="code.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
